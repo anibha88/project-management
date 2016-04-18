@@ -3,7 +3,7 @@ class TasksController < ApplicationController
 
   
   def create
-    @task = @project.task.create(task_params)
+    @task = @project.tasks.create(task_params)
     redirect_to @project 
   end
 
